@@ -26,6 +26,7 @@ body{
   p {
     font-weight: 600;
     font-style: normal;
+    line-height: 30px;
   }
 .hero h2{
     font-weight: 400;
@@ -50,4 +51,55 @@ padding: 15px 30px;
 .btn-custom:hover{
     background-color: var(--btni-hovercolor);
     color:rgb(214, 78, 255) ;text-shadow: 2px 2px 5px rgba(238, 113, 255, 0.5);
+}
+.btn-section-outline{
+border: 1px solid var(--btni-color);
+border-radius: 4px;
+color:var(--btni-color);
+font-size: 18px;
+line-height:27px;
+padding: 15px 30px;
+}
+
+h2{
+  font-size: 64px;
+  font-weight: 700;
+}
+p{
+ font-weight: normal;
+ font-size: 16px; 
+}
+.project-description{
+  padding: 120px 60px;
+}
+
+@media(max-width: 1400px){
+  .project-description{
+    padding: 60px 60px !important;
+    text-align: center;
+  }
+}
+@media(max-width: 1200px){
+  .project-description{
+    padding:0px !important ;
+    text-align: center;
+  }
+  h1{
+    font-size: 60px;
+    line-height: 2;
+  }
+  .project-title{
+    font-size:44px ;
+  }
+  .hero{
+    background-color: var(--primary-color);
+    color: rgb(165, 235, 0);
+    /*text-shadow: x-offset y-offset blur-radius color;*/
+    text-shadow: 2px 2px 6px rgba(221, 255, 184, 0.5);
+    text-align: center;
+    padding: 80px 20px;
+}
+}
+.project-title{
+  font-family: var(--heading-font-family);
 }
