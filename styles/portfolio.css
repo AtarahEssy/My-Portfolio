@@ -1,14 +1,53 @@
+:root{
+--primary-color:rgb(51, 0, 65);
+  --btni-color: #720194;
+  --btni-hovercolor: #021b00; 
+  --heading-font-family:"Playfair Display", serif;
+  --default-font-family:"Poppins", sans-serif;
+}
 body{
-    background-color: rgb(192, 255, 255);
+    font-family: var(--default-font-family);
+}
+.hero{
+    background-color: var(--primary-color);
+    color: rgb(165, 235, 0);
+    /*text-shadow: x-offset y-offset blur-radius color;*/
+    text-shadow: 2px 2px 6px rgba(221, 255, 184, 0.5);
+    text-align: center;
+    padding: 160px 20px;
 }
   h1 {
-    font-family: "Playfair Display", serif;
+    font-family: var(--heading-font-family);
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    font-size: 96px;
   }
   p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
   }
+.hero h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 2;
+  }
+.hero p{
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+
+}
+.btn-custom{
+background: var(--btni-color);
+border-radius: 4px;
+color:greenyellow ;
+font-size: 18px;
+line-height:27px;
+padding: 15px 30px;
+}
+.btn-custom:hover{
+    background-color: var(--btni-hovercolor);
+    color:rgb(214, 78, 255) ;text-shadow: 2px 2px 5px rgba(238, 113, 255, 0.5);
+}
