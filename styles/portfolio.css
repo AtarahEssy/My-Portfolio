@@ -1,12 +1,26 @@
 :root{
 --primary-color:rgb(51, 0, 65);
   --btni-color: #720194;
-  --btni-hovercolor: #021b00; 
+  --btni-hovercolor: rgb(34, 0, 43); 
   --heading-font-family:"Playfair Display", serif;
   --default-font-family:"Poppins", sans-serif;
 }
 body{
     font-family: var(--default-font-family);
+    background-color: rgb(239, 222, 255);
+}
+.navbar-brand, .nav-link{
+  color: rgb(165, 235, 0);
+}
+.navbar-toggler-icon {
+  background-image: none; /* Remove default icon */
+}
+
+
+.navbar-toggler-icon::before {
+  content: '☰'; /* Unicode character for hamburger icon */
+  font-size: 24px; /* Adjust size as needed */
+  color:  rgb(165, 235, 0); /* Icon color */
 }
 .hero{
     background-color: var(--primary-color);
@@ -47,10 +61,27 @@ color:greenyellow ;
 font-size: 18px;
 line-height:27px;
 padding: 15px 30px;
+margin: 20px;
+
 }
 .btn-custom:hover{
     background-color: var(--btni-hovercolor);
-    color:rgb(214, 78, 255) ;text-shadow: 2px 2px 5px rgba(238, 113, 255, 0.5);
+    color:rgb(214, 78, 255) ;
+    text-shadow: 2px 2px 5px rgba(238, 113, 255, 0.5);
+}
+.btn-custom-2{
+  color: rgb(214, 78, 255);
+  border-radius: 4px;
+  font-size: 18px;
+line-height:27px;
+padding: 15px 30px;
+border: 1px solid var(--btni-color);
+margin: 20px;
+}
+.initial-btns{
+  display: flex;
+  justify-content: center;
+
 }
 .btn-section-outline{
 border: 1px solid var(--btni-color);
@@ -102,4 +133,33 @@ p{
 }
 .project-title{
   font-family: var(--heading-font-family);
+  color: var(--primary-color);
+}
+.about-page{
+  background-color: rgb(239, 222, 255);
+}
+.villain{
+text-align: center;
+margin-bottom: 50px;
+}
+.villain h1{
+  margin-top: 70px;
+  font-weight: 700;
+    font-style: normal;
+    font-size: 96px;
+    color: var(--primary-color);
+}
+#contact{
+  margin-top: 70px;
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 630;
+}
+.email {
+  font-size: 25px;
+  color: yellowgreen;
+
+}
+.email:hover{
+  text-decoration: underline;
 }
