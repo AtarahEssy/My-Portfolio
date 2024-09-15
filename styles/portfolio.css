@@ -30,7 +30,7 @@ body{
     text-align: center;
     padding: 140px 20px;
 }
-  h1 {
+  h1,h4 {
     font-family: var(--heading-font-family);
     font-optical-sizing: auto;
     font-weight: 700;
@@ -135,7 +135,9 @@ p{
     padding: 0;
 
   }
-
+    footer h4{
+      font-size: 26px;
+    }
 }
 .project-title{
   font-family: var(--heading-font-family);
@@ -191,6 +193,42 @@ color: var(--primary-color);
 }
 .about-section-content{
   margin: 30px;
+}
+footer{
+  margin: 60px 0;
+}
+footer .contact-box{
+background-color: #f7cfff;
+padding: 30px 120px;
+border-radius: 10px;
+}
+footer .email-link{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+}
+footer .email-link:hover{
+  color: rgb(108, 149, 28);
+}
+footer .social-links a{
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: #e17dff;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+footer .social-links a:hover{
+  color: #e17dff;
+  background-color: var(--primary-color);
+}
+footer h4{
+  font-size: 48px;
+}
+footer p{
+  margin: 0;
 }
 /*.logo{
   width: 70px;
