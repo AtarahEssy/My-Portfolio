@@ -231,6 +231,10 @@ footer h4{
 footer p{
   margin: 0;
 }
+.github-link{
+  text-decoration: none;
+  color: var(--btni-color);
+}
 /*.logo{
   width: 70px;
 }
